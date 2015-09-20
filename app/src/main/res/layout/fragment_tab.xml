@@ -1,0 +1,122 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.frederic.tabtemplate.MapFragment">
+
+    <LinearLayout
+        android:id="@+id/linearContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:card_view='http://schemas.android.com/apk/res-auto'
+            android:id="@+id/cardview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16sp" >
+
+                <!-- Content for a card goes here -->
+
+                <!-- Big header (optional) -->
+                <TextView
+                    android:id="@+id/textview_bigheader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginTop="24sp"
+                    android:text="Big Header"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp" />
+
+                <!-- Small header -->
+                <TextView
+                    android:id="@+id/textview_smallheader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginTop="8dp"
+                    android:text="Small header"
+                    android:textColor="#696969"
+                    android:textSize="14dp" />
+
+                <!-- stuff next to each other -->
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:orientation="horizontal">
+
+                    <!-- Like a seekbar... -->
+                    <SeekBar
+                        android:id="@+id/seekbar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="12sp"
+                        android:layout_toLeftOf="@+id/textview"
+                        android:progressTint="@color/colorAccent"
+                        android:thumbTint="@color/colorPrimary" />
+
+                    <!-- ...next to a display of its value -->
+                    <TextView
+                        android:id="@+id/textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="16sp"
+                        android:layout_marginRight="24sp"
+                        android:layout_marginTop="8dp"
+                        android:text="20.2 %"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                </RelativeLayout>
+
+                <!-- Or a classical settings line -->
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textview_settings_toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16sp"
+                        android:layout_marginLeft="24sp"
+                        android:layout_marginTop="16sp"
+                        android:text="Set setting on or off?"
+                        android:textColor="@color/black" />
+
+                    <Switch
+                        android:id="@+id/switch_settings_toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginTop="11sp"
+                        android:layout_toRightOf="@+id/textview_settings_toggle" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

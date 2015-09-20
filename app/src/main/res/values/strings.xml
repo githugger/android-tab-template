@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TabTemplate</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="connect_fragment">connect fragment</string>
+    <string name="offer_fragment">offer fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

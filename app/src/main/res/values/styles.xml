@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- <item name="colorPrimary">@color/indigo500</item> - this is how you define colors before 5.0 (appcombat) -->
+
+        <!-- Customize your theme here. -->
+        <!-- Main theme colors -->
+
+        <!-- AppCombat / because fuck consistency -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- <item name="titleTextColor">@color/white</item> -->
+
+        <!--
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        -->
+
+        <!--
+        <item name="actionBarStyle">@style/ActionBar.Solid.AppTheme</item>
+        -->
+
+    </style>
+
+    <!--
+    <style name="ActionBar.Solid.AppTheme" parent="Widget.AppCompat.Dark.ActionBar.Solid">
+        <item name="android:textAllCaps">true</item>
+    </style>
+    -->
+
+</resources>

@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.frederic.tabtemplate.TabFragment">
+
+    <RelativeLayout
+        xmlns:card_view='http://schemas.android.com/apk/res-auto'
+        android:id="@+id/layout_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!-- Map container and MapView -->
+        <LinearLayout
+            android:id="@+id/map_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </LinearLayout>
+
+        <!-- Overlay layout for stuff that should be over the map (using the map as backdrop -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16sp" >
+
+                    <!-- Cards work just like on the basic fragment -->
+                    <!-- Big header (optional) -->
+                    <TextView
+                        android:id="@+id/textview_bigheader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="24sp"
+                        android:text="Just like basic"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textview_smallheader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="16sp"
+                        android:layout_marginBottom="16sp"
+                        android:text="Yea, really just the same as in the basic fragment."
+                        android:textColor="#696969"
+                        android:textSize="14dp" />
+
+                    <!-- Text tends to want another 16sp margin bottom (in addition to the margin
+                    of the layout). Otherwise it looks a little squished.
+                    TODO: check the design guidelines on this! -->
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
